@@ -426,9 +426,331 @@
     <p class="body-text">Die folgende Grafik zeigt Wort-Vektoren als Farbmuster. Jede Spalte steht für eine Dimension, jede Farbe für einen Zahlenwert. „Man" und „Woman" haben sichtbar ähnliche Muster. „Water" sieht komplett anders aus.</p>
 
     <div class="figure">
-      <img src="https://jalammar.github.io/images/word2vec/queen-woman-girl-embeddings.png" alt="Vektor-Embeddings als Farbmuster: Queen, Woman, Girl, King, Man, Boy, Water im Vergleich" loading="lazy" />
+      <svg viewBox="0 0 820 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border-radius:16px;background:#FFFFFF;box-shadow:0 4px 24px rgba(18,45,110,0.12);padding:24px;" role="img" aria-label="Vektor-Embeddings als Farbmuster. Man und Woman haben ähnliche Muster, Water sieht anders aus.">
+        <defs>
+          <linearGradient id="warm" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#122D6E"/>
+            <stop offset="50%" stop-color="#F0F2F8"/>
+            <stop offset="100%" stop-color="#FF5100"/>
+          </linearGradient>
+        </defs>
+        <!-- Labels links -->
+        <g font-family="Manrope, sans-serif" font-size="14" font-weight="700" fill="#122D6E" text-anchor="end">
+          <text x="110" y="70">man</text>
+          <text x="110" y="115">woman</text>
+          <text x="110" y="160">boy</text>
+          <text x="110" y="205">girl</text>
+          <text x="110" y="250">king</text>
+          <text x="110" y="295">queen</text>
+          <text x="110" y="340">water</text>
+        </g>
+        <!-- Rows mit 40 Zellen je 16x32 -->
+        <g transform="translate(125, 48)">
+          <!-- man -->
+          <g transform="translate(0,0)"><rect width="640" height="32" fill="#F0F2F8"/>
+            <rect x="0" width="16" height="32" fill="#FF5100" opacity="0.75"/>
+            <rect x="16" width="16" height="32" fill="#122D6E" opacity="0.45"/>
+            <rect x="32" width="16" height="32" fill="#FF5100" opacity="0.35"/>
+            <rect x="48" width="16" height="32" fill="#122D6E" opacity="0.8"/>
+            <rect x="64" width="16" height="32" fill="#FF5100" opacity="0.55"/>
+            <rect x="80" width="16" height="32" fill="#122D6E" opacity="0.3"/>
+            <rect x="96" width="16" height="32" fill="#FF5100" opacity="0.7"/>
+            <rect x="112" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="128" width="16" height="32" fill="#FF5100" opacity="0.45"/>
+            <rect x="144" width="16" height="32" fill="#122D6E" opacity="0.6"/>
+            <rect x="160" width="16" height="32" fill="#FF5100" opacity="0.85"/>
+            <rect x="176" width="16" height="32" fill="#122D6E" opacity="0.2"/>
+            <rect x="192" width="16" height="32" fill="#FF5100" opacity="0.4"/>
+            <rect x="208" width="16" height="32" fill="#122D6E" opacity="0.75"/>
+            <rect x="224" width="16" height="32" fill="#FF5100" opacity="0.6"/>
+            <rect x="240" width="16" height="32" fill="#FF5100" opacity="0.3"/>
+            <rect x="256" width="16" height="32" fill="#122D6E" opacity="0.85"/>
+            <rect x="272" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="288" width="16" height="32" fill="#FF5100" opacity="0.5"/>
+            <rect x="304" width="16" height="32" fill="#122D6E" opacity="0.4"/>
+            <rect x="320" width="16" height="32" fill="#FF5100" opacity="0.75"/>
+            <rect x="336" width="16" height="32" fill="#122D6E" opacity="0.65"/>
+            <rect x="352" width="16" height="32" fill="#FF5100" opacity="0.2"/>
+            <rect x="368" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+            <rect x="384" width="16" height="32" fill="#FF5100" opacity="0.8"/>
+            <rect x="400" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="416" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="432" width="16" height="32" fill="#FF5100" opacity="0.45"/>
+            <rect x="448" width="16" height="32" fill="#122D6E" opacity="0.35"/>
+            <rect x="464" width="16" height="32" fill="#FF5100" opacity="0.6"/>
+            <rect x="480" width="16" height="32" fill="#122D6E" opacity="0.8"/>
+            <rect x="496" width="16" height="32" fill="#FF5100" opacity="0.3"/>
+            <rect x="512" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+            <rect x="528" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="544" width="16" height="32" fill="#FF5100" opacity="0.7"/>
+            <rect x="560" width="16" height="32" fill="#122D6E" opacity="0.5"/>
+            <rect x="576" width="16" height="32" fill="#FF5100" opacity="0.85"/>
+            <rect x="592" width="16" height="32" fill="#122D6E" opacity="0.4"/>
+            <rect x="608" width="16" height="32" fill="#FF5100" opacity="0.65"/>
+            <rect x="624" width="16" height="32" fill="#122D6E" opacity="0.3"/>
+          </g>
+          <!-- woman (ähnlich zu man) -->
+          <g transform="translate(0,45)"><rect width="640" height="32" fill="#F0F2F8"/>
+            <rect x="0" width="16" height="32" fill="#FF5100" opacity="0.8"/>
+            <rect x="16" width="16" height="32" fill="#122D6E" opacity="0.5"/>
+            <rect x="32" width="16" height="32" fill="#FF5100" opacity="0.3"/>
+            <rect x="48" width="16" height="32" fill="#122D6E" opacity="0.75"/>
+            <rect x="64" width="16" height="32" fill="#FF5100" opacity="0.6"/>
+            <rect x="80" width="16" height="32" fill="#122D6E" opacity="0.25"/>
+            <rect x="96" width="16" height="32" fill="#FF5100" opacity="0.65"/>
+            <rect x="112" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="128" width="16" height="32" fill="#FF5100" opacity="0.5"/>
+            <rect x="144" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+            <rect x="160" width="16" height="32" fill="#FF5100" opacity="0.9"/>
+            <rect x="176" width="16" height="32" fill="#122D6E" opacity="0.25"/>
+            <rect x="192" width="16" height="32" fill="#FF5100" opacity="0.45"/>
+            <rect x="208" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="224" width="16" height="32" fill="#FF5100" opacity="0.55"/>
+            <rect x="240" width="16" height="32" fill="#FF5100" opacity="0.35"/>
+            <rect x="256" width="16" height="32" fill="#122D6E" opacity="0.8"/>
+            <rect x="272" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="288" width="16" height="32" fill="#FF5100" opacity="0.55"/>
+            <rect x="304" width="16" height="32" fill="#122D6E" opacity="0.45"/>
+            <rect x="320" width="16" height="32" fill="#FF5100" opacity="0.7"/>
+            <rect x="336" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="352" width="16" height="32" fill="#FF5100" opacity="0.25"/>
+            <rect x="368" width="16" height="32" fill="#122D6E" opacity="0.6"/>
+            <rect x="384" width="16" height="32" fill="#FF5100" opacity="0.75"/>
+            <rect x="400" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="416" width="16" height="32" fill="#122D6E" opacity="0.75"/>
+            <rect x="432" width="16" height="32" fill="#FF5100" opacity="0.4"/>
+            <rect x="448" width="16" height="32" fill="#122D6E" opacity="0.3"/>
+            <rect x="464" width="16" height="32" fill="#FF5100" opacity="0.65"/>
+            <rect x="480" width="16" height="32" fill="#122D6E" opacity="0.75"/>
+            <rect x="496" width="16" height="32" fill="#FF5100" opacity="0.35"/>
+            <rect x="512" width="16" height="32" fill="#122D6E" opacity="0.5"/>
+            <rect x="528" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="544" width="16" height="32" fill="#FF5100" opacity="0.75"/>
+            <rect x="560" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+            <rect x="576" width="16" height="32" fill="#FF5100" opacity="0.8"/>
+            <rect x="592" width="16" height="32" fill="#122D6E" opacity="0.45"/>
+            <rect x="608" width="16" height="32" fill="#FF5100" opacity="0.6"/>
+            <rect x="624" width="16" height="32" fill="#122D6E" opacity="0.35"/>
+          </g>
+          <!-- boy -->
+          <g transform="translate(0,90)"><rect width="640" height="32" fill="#F0F2F8"/>
+            <rect x="0" width="16" height="32" fill="#FF5100" opacity="0.7"/>
+            <rect x="16" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+            <rect x="32" width="16" height="32" fill="#FF5100" opacity="0.4"/>
+            <rect x="48" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="64" width="16" height="32" fill="#FF5100" opacity="0.5"/>
+            <rect x="80" width="16" height="32" fill="#122D6E" opacity="0.3"/>
+            <rect x="96" width="16" height="32" fill="#FF5100" opacity="0.75"/>
+            <rect x="112" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="128" width="16" height="32" fill="#FF5100" opacity="0.4"/>
+            <rect x="144" width="16" height="32" fill="#122D6E" opacity="0.65"/>
+            <rect x="160" width="16" height="32" fill="#FF5100" opacity="0.8"/>
+            <rect x="176" width="16" height="32" fill="#122D6E" opacity="0.25"/>
+            <rect x="192" width="16" height="32" fill="#FF5100" opacity="0.35"/>
+            <rect x="208" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="224" width="16" height="32" fill="#FF5100" opacity="0.55"/>
+            <rect x="240" width="16" height="32" fill="#FF5100" opacity="0.25"/>
+            <rect x="256" width="16" height="32" fill="#122D6E" opacity="0.9"/>
+            <rect x="272" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="288" width="16" height="32" fill="#FF5100" opacity="0.5"/>
+            <rect x="304" width="16" height="32" fill="#122D6E" opacity="0.35"/>
+            <rect x="320" width="16" height="32" fill="#FF5100" opacity="0.65"/>
+            <rect x="336" width="16" height="32" fill="#122D6E" opacity="0.6"/>
+            <rect x="352" width="16" height="32" fill="#FF5100" opacity="0.3"/>
+            <rect x="368" width="16" height="32" fill="#122D6E" opacity="0.5"/>
+            <rect x="384" width="16" height="32" fill="#FF5100" opacity="0.85"/>
+            <rect x="400" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="416" width="16" height="32" fill="#122D6E" opacity="0.65"/>
+            <rect x="432" width="16" height="32" fill="#FF5100" opacity="0.5"/>
+            <rect x="448" width="16" height="32" fill="#122D6E" opacity="0.4"/>
+            <rect x="464" width="16" height="32" fill="#FF5100" opacity="0.55"/>
+            <rect x="480" width="16" height="32" fill="#122D6E" opacity="0.75"/>
+            <rect x="496" width="16" height="32" fill="#FF5100" opacity="0.25"/>
+            <rect x="512" width="16" height="32" fill="#122D6E" opacity="0.6"/>
+            <rect x="528" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="544" width="16" height="32" fill="#FF5100" opacity="0.6"/>
+            <rect x="560" width="16" height="32" fill="#122D6E" opacity="0.45"/>
+            <rect x="576" width="16" height="32" fill="#FF5100" opacity="0.9"/>
+            <rect x="592" width="16" height="32" fill="#122D6E" opacity="0.35"/>
+            <rect x="608" width="16" height="32" fill="#FF5100" opacity="0.7"/>
+            <rect x="624" width="16" height="32" fill="#122D6E" opacity="0.25"/>
+          </g>
+          <!-- girl (ähnlich zu boy) -->
+          <g transform="translate(0,135)"><rect width="640" height="32" fill="#F0F2F8"/>
+            <rect x="0" width="16" height="32" fill="#FF5100" opacity="0.75"/>
+            <rect x="16" width="16" height="32" fill="#122D6E" opacity="0.6"/>
+            <rect x="32" width="16" height="32" fill="#FF5100" opacity="0.35"/>
+            <rect x="48" width="16" height="32" fill="#122D6E" opacity="0.65"/>
+            <rect x="64" width="16" height="32" fill="#FF5100" opacity="0.55"/>
+            <rect x="80" width="16" height="32" fill="#122D6E" opacity="0.3"/>
+            <rect x="96" width="16" height="32" fill="#FF5100" opacity="0.7"/>
+            <rect x="112" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="128" width="16" height="32" fill="#FF5100" opacity="0.45"/>
+            <rect x="144" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="160" width="16" height="32" fill="#FF5100" opacity="0.85"/>
+            <rect x="176" width="16" height="32" fill="#122D6E" opacity="0.3"/>
+            <rect x="192" width="16" height="32" fill="#FF5100" opacity="0.4"/>
+            <rect x="208" width="16" height="32" fill="#122D6E" opacity="0.65"/>
+            <rect x="224" width="16" height="32" fill="#FF5100" opacity="0.6"/>
+            <rect x="240" width="16" height="32" fill="#FF5100" opacity="0.3"/>
+            <rect x="256" width="16" height="32" fill="#122D6E" opacity="0.85"/>
+            <rect x="272" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="288" width="16" height="32" fill="#FF5100" opacity="0.55"/>
+            <rect x="304" width="16" height="32" fill="#122D6E" opacity="0.4"/>
+            <rect x="320" width="16" height="32" fill="#FF5100" opacity="0.7"/>
+            <rect x="336" width="16" height="32" fill="#122D6E" opacity="0.65"/>
+            <rect x="352" width="16" height="32" fill="#FF5100" opacity="0.2"/>
+            <rect x="368" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+            <rect x="384" width="16" height="32" fill="#FF5100" opacity="0.8"/>
+            <rect x="400" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="416" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="432" width="16" height="32" fill="#FF5100" opacity="0.45"/>
+            <rect x="448" width="16" height="32" fill="#122D6E" opacity="0.35"/>
+            <rect x="464" width="16" height="32" fill="#FF5100" opacity="0.6"/>
+            <rect x="480" width="16" height="32" fill="#122D6E" opacity="0.8"/>
+            <rect x="496" width="16" height="32" fill="#FF5100" opacity="0.3"/>
+            <rect x="512" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+            <rect x="528" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="544" width="16" height="32" fill="#FF5100" opacity="0.7"/>
+            <rect x="560" width="16" height="32" fill="#122D6E" opacity="0.5"/>
+            <rect x="576" width="16" height="32" fill="#FF5100" opacity="0.85"/>
+            <rect x="592" width="16" height="32" fill="#122D6E" opacity="0.4"/>
+            <rect x="608" width="16" height="32" fill="#FF5100" opacity="0.65"/>
+            <rect x="624" width="16" height="32" fill="#122D6E" opacity="0.3"/>
+          </g>
+          <!-- king -->
+          <g transform="translate(0,180)"><rect width="640" height="32" fill="#F0F2F8"/>
+            <rect x="0" width="16" height="32" fill="#FF5100" opacity="0.6"/>
+            <rect x="16" width="16" height="32" fill="#122D6E" opacity="0.8"/>
+            <rect x="32" width="16" height="32" fill="#FF5100" opacity="0.25"/>
+            <rect x="48" width="16" height="32" fill="#122D6E" opacity="0.4"/>
+            <rect x="64" width="16" height="32" fill="#FF5100" opacity="0.85"/>
+            <rect x="80" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+            <rect x="96" width="16" height="32" fill="#FF5100" opacity="0.4"/>
+            <rect x="112" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="128" width="16" height="32" fill="#FF5100" opacity="0.7"/>
+            <rect x="144" width="16" height="32" fill="#122D6E" opacity="0.3"/>
+            <rect x="160" width="16" height="32" fill="#FF5100" opacity="0.55"/>
+            <rect x="176" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="192" width="16" height="32" fill="#FF5100" opacity="0.25"/>
+            <rect x="208" width="16" height="32" fill="#122D6E" opacity="0.85"/>
+            <rect x="224" width="16" height="32" fill="#FF5100" opacity="0.45"/>
+            <rect x="240" width="16" height="32" fill="#FF5100" opacity="0.7"/>
+            <rect x="256" width="16" height="32" fill="#122D6E" opacity="0.4"/>
+            <rect x="272" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="288" width="16" height="32" fill="#FF5100" opacity="0.3"/>
+            <rect x="304" width="16" height="32" fill="#122D6E" opacity="0.75"/>
+            <rect x="320" width="16" height="32" fill="#FF5100" opacity="0.55"/>
+            <rect x="336" width="16" height="32" fill="#122D6E" opacity="0.3"/>
+            <rect x="352" width="16" height="32" fill="#FF5100" opacity="0.7"/>
+            <rect x="368" width="16" height="32" fill="#122D6E" opacity="0.85"/>
+            <rect x="384" width="16" height="32" fill="#FF5100" opacity="0.4"/>
+            <rect x="400" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="416" width="16" height="32" fill="#122D6E" opacity="0.5"/>
+            <rect x="432" width="16" height="32" fill="#FF5100" opacity="0.8"/>
+            <rect x="448" width="16" height="32" fill="#122D6E" opacity="0.6"/>
+            <rect x="464" width="16" height="32" fill="#FF5100" opacity="0.3"/>
+            <rect x="480" width="16" height="32" fill="#122D6E" opacity="0.45"/>
+            <rect x="496" width="16" height="32" fill="#FF5100" opacity="0.7"/>
+            <rect x="512" width="16" height="32" fill="#122D6E" opacity="0.8"/>
+            <rect x="528" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="544" width="16" height="32" fill="#FF5100" opacity="0.4"/>
+            <rect x="560" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="576" width="16" height="32" fill="#FF5100" opacity="0.55"/>
+            <rect x="592" width="16" height="32" fill="#122D6E" opacity="0.25"/>
+            <rect x="608" width="16" height="32" fill="#FF5100" opacity="0.85"/>
+            <rect x="624" width="16" height="32" fill="#122D6E" opacity="0.5"/>
+          </g>
+          <!-- queen (ähnlich zu king) -->
+          <g transform="translate(0,225)"><rect width="640" height="32" fill="#F0F2F8"/>
+            <rect x="0" width="16" height="32" fill="#FF5100" opacity="0.65"/>
+            <rect x="16" width="16" height="32" fill="#122D6E" opacity="0.85"/>
+            <rect x="32" width="16" height="32" fill="#FF5100" opacity="0.2"/>
+            <rect x="48" width="16" height="32" fill="#122D6E" opacity="0.35"/>
+            <rect x="64" width="16" height="32" fill="#FF5100" opacity="0.9"/>
+            <rect x="80" width="16" height="32" fill="#122D6E" opacity="0.5"/>
+            <rect x="96" width="16" height="32" fill="#FF5100" opacity="0.45"/>
+            <rect x="112" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="128" width="16" height="32" fill="#FF5100" opacity="0.75"/>
+            <rect x="144" width="16" height="32" fill="#122D6E" opacity="0.25"/>
+            <rect x="160" width="16" height="32" fill="#FF5100" opacity="0.5"/>
+            <rect x="176" width="16" height="32" fill="#122D6E" opacity="0.75"/>
+            <rect x="192" width="16" height="32" fill="#FF5100" opacity="0.3"/>
+            <rect x="208" width="16" height="32" fill="#122D6E" opacity="0.8"/>
+            <rect x="224" width="16" height="32" fill="#FF5100" opacity="0.4"/>
+            <rect x="240" width="16" height="32" fill="#FF5100" opacity="0.75"/>
+            <rect x="256" width="16" height="32" fill="#122D6E" opacity="0.45"/>
+            <rect x="272" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="288" width="16" height="32" fill="#FF5100" opacity="0.35"/>
+            <rect x="304" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="320" width="16" height="32" fill="#FF5100" opacity="0.5"/>
+            <rect x="336" width="16" height="32" fill="#122D6E" opacity="0.35"/>
+            <rect x="352" width="16" height="32" fill="#FF5100" opacity="0.65"/>
+            <rect x="368" width="16" height="32" fill="#122D6E" opacity="0.85"/>
+            <rect x="384" width="16" height="32" fill="#FF5100" opacity="0.45"/>
+            <rect x="400" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="416" width="16" height="32" fill="#122D6E" opacity="0.5"/>
+            <rect x="432" width="16" height="32" fill="#FF5100" opacity="0.75"/>
+            <rect x="448" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+            <rect x="464" width="16" height="32" fill="#FF5100" opacity="0.25"/>
+            <rect x="480" width="16" height="32" fill="#122D6E" opacity="0.4"/>
+            <rect x="496" width="16" height="32" fill="#FF5100" opacity="0.75"/>
+            <rect x="512" width="16" height="32" fill="#122D6E" opacity="0.75"/>
+            <rect x="528" width="16" height="32" fill="#F0F2F8"/>
+            <rect x="544" width="16" height="32" fill="#FF5100" opacity="0.45"/>
+            <rect x="560" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="576" width="16" height="32" fill="#FF5100" opacity="0.6"/>
+            <rect x="592" width="16" height="32" fill="#122D6E" opacity="0.3"/>
+            <rect x="608" width="16" height="32" fill="#FF5100" opacity="0.85"/>
+            <rect x="624" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+          </g>
+          <!-- water (anders) -->
+          <g transform="translate(0,270)"><rect width="640" height="32" fill="#F0F2F8"/>
+            <rect x="0" width="16" height="32" fill="#122D6E" opacity="0.9"/>
+            <rect x="16" width="16" height="32" fill="#122D6E" opacity="0.3"/>
+            <rect x="32" width="16" height="32" fill="#122D6E" opacity="0.85"/>
+            <rect x="48" width="16" height="32" fill="#FF5100" opacity="0.2"/>
+            <rect x="64" width="16" height="32" fill="#122D6E" opacity="0.6"/>
+            <rect x="80" width="16" height="32" fill="#122D6E" opacity="0.75"/>
+            <rect x="96" width="16" height="32" fill="#122D6E" opacity="0.4"/>
+            <rect x="112" width="16" height="32" fill="#FF5100" opacity="0.25"/>
+            <rect x="128" width="16" height="32" fill="#122D6E" opacity="0.8"/>
+            <rect x="144" width="16" height="32" fill="#122D6E" opacity="0.5"/>
+            <rect x="160" width="16" height="32" fill="#FF5100" opacity="0.15"/>
+            <rect x="176" width="16" height="32" fill="#122D6E" opacity="0.9"/>
+            <rect x="192" width="16" height="32" fill="#122D6E" opacity="0.35"/>
+            <rect x="208" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="224" width="16" height="32" fill="#FF5100" opacity="0.2"/>
+            <rect x="240" width="16" height="32" fill="#122D6E" opacity="0.85"/>
+            <rect x="256" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+            <rect x="272" width="16" height="32" fill="#122D6E" opacity="0.75"/>
+            <rect x="288" width="16" height="32" fill="#FF5100" opacity="0.25"/>
+            <rect x="304" width="16" height="32" fill="#122D6E" opacity="0.9"/>
+            <rect x="320" width="16" height="32" fill="#122D6E" opacity="0.4"/>
+            <rect x="336" width="16" height="32" fill="#122D6E" opacity="0.85"/>
+            <rect x="352" width="16" height="32" fill="#122D6E" opacity="0.7"/>
+            <rect x="368" width="16" height="32" fill="#FF5100" opacity="0.2"/>
+            <rect x="384" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+            <rect x="400" width="16" height="32" fill="#122D6E" opacity="0.8"/>
+            <rect x="416" width="16" height="32" fill="#122D6E" opacity="0.9"/>
+            <rect x="432" width="16" height="32" fill="#FF5100" opacity="0.25"/>
+            <rect x="448" width="16" height="32" fill="#122D6E" opacity="0.45"/>
+            <rect x="464" width="16" height="32" fill="#122D6E" opacity="0.85"/>
+            <rect x="480" width="16" height="32" fill="#122D6E" opacity="0.6"/>
+            <rect x="496" width="16" height="32" fill="#FF5100" opacity="0.15"/>
+            <rect x="512" width="16" height="32" fill="#122D6E" opacity="0.9"/>
+            <rect x="528" width="16" height="32" fill="#122D6E" opacity="0.5"/>
+            <rect x="544" width="16" height="32" fill="#122D6E" opacity="0.75"/>
+            <rect x="560" width="16" height="32" fill="#FF5100" opacity="0.2"/>
+            <rect x="576" width="16" height="32" fill="#122D6E" opacity="0.85"/>
+            <rect x="592" width="16" height="32" fill="#122D6E" opacity="0.35"/>
+            <rect x="608" width="16" height="32" fill="#122D6E" opacity="0.9"/>
+            <rect x="624" width="16" height="32" fill="#122D6E" opacity="0.55"/>
+          </g>
+        </g>
+      </svg>
       <div class="figure-caption">
-        Wort-Embeddings als Farbmuster. Quelle: <a href="https://jalammar.github.io/illustrated-word2vec/" target="_blank" rel="noopener">Jay Alammar, The Illustrated Word2Vec</a>.
+        Darstellung von Wort-Vektoren als Farbmuster. Die ersten sechs Begriffe („man", „woman", „boy", „girl", „king", „queen") haben ähnliche Muster, weil sie im Sprachgebrauch ähnlich verwendet werden. „water" sticht heraus. Schematische Illustration nach dem Prinzip von <a href="https://jalammar.github.io/illustrated-word2vec/" target="_blank" rel="noopener">Jay Alammar, The Illustrated Word2Vec</a>.
       </div>
     </div>
 
@@ -440,9 +762,53 @@
     <p class="body-text">Projiziert man Vektoren in einen 3D-Raum, bilden sich Cluster. Tiere liegen nahe beieinander, Früchte bilden eine eigene Gruppe, dazwischen ist Abstand. Für Ingenieurbüros heißt das: „Heizungsprojekt.pdf" und „Wärmepumpeninstallation.docx" landen nahe beieinander, obwohl kein Wort gleich ist.</p>
 
     <div class="figure">
-      <img src="https://images.datacamp.com/image/upload/v1701794314/image_ac10e9a4d7.png" alt="3D-Vektorraum mit semantischen Clustern aus Tier- und Fruchtbegriffen" loading="lazy" />
+      <svg viewBox="0 0 820 460" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border-radius:16px;background:#FFFFFF;box-shadow:0 4px 24px rgba(18,45,110,0.12);padding:24px;" role="img" aria-label="3D-Vektorraum mit zwei Clustern: Tiere und Früchte">
+        <!-- Axen -->
+        <g stroke="#122D6E" stroke-width="1.5" stroke-opacity="0.3" fill="none">
+          <line x1="100" y1="400" x2="720" y2="400"/>
+          <line x1="100" y1="400" x2="100" y2="60"/>
+          <line x1="100" y1="400" x2="260" y2="280"/>
+        </g>
+        <g font-family="Manrope, sans-serif" font-size="11" fill="#122D6E" fill-opacity="0.5">
+          <text x="720" y="420">Dimension 1</text>
+          <text x="70" y="55">Dimension 2</text>
+          <text x="265" y="275">Dimension 3</text>
+        </g>
+        
+        <!-- Tier-Cluster (links, mit Orange-Verbindungen) -->
+        <g>
+          <circle cx="240" cy="160" r="80" fill="#FF5100" fill-opacity="0.08" stroke="#FF5100" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <text x="240" y="95" font-family="Manrope, sans-serif" font-size="13" font-weight="700" fill="#FF5100" text-anchor="middle">Tiere</text>
+        </g>
+        <!-- Tier-Punkte -->
+        <g font-family="Manrope, sans-serif" font-size="14" font-weight="700" fill="#122D6E">
+          <g><circle cx="200" cy="140" r="7" fill="#FF5100"/><text x="212" y="144">wolf</text></g>
+          <g><circle cx="260" cy="130" r="7" fill="#FF5100"/><text x="272" y="134">dog</text></g>
+          <g><circle cx="220" cy="185" r="7" fill="#FF5100"/><text x="232" y="189">cat</text></g>
+          <g><circle cx="275" cy="195" r="7" fill="#FF5100"/><text x="287" y="199">lion</text></g>
+          <g><circle cx="190" cy="195" r="7" fill="#FF5100"/><text x="150" y="199" text-anchor="end">tiger</text></g>
+        </g>
+        
+        <!-- Frucht-Cluster (rechts, mit Navy-Verbindungen) -->
+        <g>
+          <circle cx="570" cy="280" r="85" fill="#122D6E" fill-opacity="0.08" stroke="#122D6E" stroke-opacity="0.2" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <text x="570" y="215" font-family="Manrope, sans-serif" font-size="13" font-weight="700" fill="#122D6E" text-anchor="middle">Früchte</text>
+        </g>
+        <!-- Frucht-Punkte -->
+        <g font-family="Manrope, sans-serif" font-size="14" font-weight="700" fill="#122D6E">
+          <g><circle cx="530" cy="260" r="7" fill="#122D6E"/><text x="542" y="264">apple</text></g>
+          <g><circle cx="590" cy="250" r="7" fill="#122D6E"/><text x="602" y="254">banana</text></g>
+          <g><circle cx="555" cy="305" r="7" fill="#122D6E"/><text x="567" y="309">pear</text></g>
+          <g><circle cx="610" cy="310" r="7" fill="#122D6E"/><text x="622" y="314">mango</text></g>
+          <g><circle cx="515" cy="310" r="7" fill="#122D6E"/><text x="475" y="314" text-anchor="end">grape</text></g>
+        </g>
+
+        <!-- Abstand-Indikator -->
+        <line x1="300" y1="170" x2="510" y2="285" stroke="#122D6E" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="3 3"/>
+        <text x="395" y="220" font-family="Manrope, sans-serif" font-size="11" fill="#122D6E" fill-opacity="0.5" text-anchor="middle" font-style="italic">semantischer Abstand</text>
+      </svg>
       <div class="figure-caption">
-        3D-Vektorraum mit semantischen Clustern. Quelle: <a href="https://www.datacamp.com/blog/what-is-vector-embedding" target="_blank" rel="noopener">DataCamp, What Are Vector Embeddings?</a>
+        Vereinfachte Projektion von Wort-Vektoren in einen dreidimensionalen Raum. Semantisch ähnliche Begriffe gruppieren sich zu Clustern. Der Abstand zwischen Clustern entspricht dem Bedeutungsunterschied. Schematische Illustration nach <a href="https://www.datacamp.com/blog/what-is-vector-embedding" target="_blank" rel="noopener">DataCamp, What Are Vector Embeddings?</a>
       </div>
     </div>
   </div>
@@ -467,9 +833,125 @@
     <p class="body-text">Die gefundenen Textstellen gehen zusammen mit der Frage an das KI-Modell. Das Modell formuliert die Antwort auf Basis dieser Textstellen, nicht auf Basis des Internets. Dazu liefert es Quellenverweise: Dokumentname, Seite, Abschnitt.</p>
 
     <div class="figure">
-      <img src="https://blogs.nvidia.com/wp-content/uploads/2023/11/NVIDIA-RAG-diagram-scaled.jpg" alt="RAG-Pipeline: Dokumente, Embedding, Vektordatenbank, Abruf, KI-Modell, Antwort mit Quellenverweisen" loading="lazy" />
+      <svg viewBox="0 0 820 480" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;border-radius:16px;background:rgba(255,255,255,0.06);padding:24px;" role="img" aria-label="RAG-Architektur: Dokumente werden indexiert, bei Fragen werden relevante Stellen abgerufen und an das KI-Modell gegeben">
+        <!-- Spalte 1: Indexierung (oben) -->
+        <g>
+          <text x="170" y="40" font-family="Manrope, sans-serif" font-size="13" font-weight="700" fill="#FF5100" text-anchor="middle" letter-spacing="1">INDEXIERUNG (EINMALIG)</text>
+          
+          <!-- Dokumente -->
+          <g transform="translate(80, 70)">
+            <rect x="0" y="0" width="90" height="60" rx="8" fill="#FFFFFF" stroke="#122D6E" stroke-width="1.5"/>
+            <rect x="8" y="4" width="74" height="4" rx="2" fill="#122D6E" fill-opacity="0.3"/>
+            <rect x="8" y="14" width="60" height="3" rx="1.5" fill="#122D6E" fill-opacity="0.2"/>
+            <rect x="8" y="22" width="68" height="3" rx="1.5" fill="#122D6E" fill-opacity="0.2"/>
+            <rect x="8" y="30" width="55" height="3" rx="1.5" fill="#122D6E" fill-opacity="0.2"/>
+            <rect x="8" y="38" width="70" height="3" rx="1.5" fill="#122D6E" fill-opacity="0.2"/>
+            <rect x="8" y="46" width="45" height="3" rx="1.5" fill="#122D6E" fill-opacity="0.2"/>
+            <text x="45" y="78" font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Dokumente</text>
+          </g>
+          
+          <!-- Pfeil 1 -->
+          <g transform="translate(180, 100)">
+            <line x1="0" y1="0" x2="40" y2="0" stroke="#FFFFFF" stroke-width="2"/>
+            <polygon points="40,0 33,-4 33,4" fill="#FFFFFF"/>
+          </g>
+          
+          <!-- Embedding-Modell -->
+          <g transform="translate(225, 70)">
+            <rect x="0" y="0" width="110" height="60" rx="8" fill="#FF5100"/>
+            <text x="55" y="28" font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Embedding-</text>
+            <text x="55" y="44" font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Modell</text>
+          </g>
+          
+          <!-- Pfeil 2 -->
+          <g transform="translate(345, 100)">
+            <line x1="0" y1="0" x2="40" y2="0" stroke="#FFFFFF" stroke-width="2"/>
+            <polygon points="40,0 33,-4 33,4" fill="#FFFFFF"/>
+          </g>
+          
+          <!-- Vektordatenbank -->
+          <g transform="translate(390, 70)">
+            <ellipse cx="55" cy="12" rx="50" ry="10" fill="#122D6E" stroke="#FFFFFF" stroke-width="2"/>
+            <path d="M 5,12 L 5,48 Q 5,60 55,60 Q 105,60 105,48 L 105,12" fill="#122D6E" stroke="#FFFFFF" stroke-width="2"/>
+            <ellipse cx="55" cy="30" rx="50" ry="8" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1"/>
+            <ellipse cx="55" cy="45" rx="50" ry="8" fill="none" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="1"/>
+            <text x="55" y="78" font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Vektordatenbank</text>
+          </g>
+        </g>
+        
+        <!-- Trennlinie -->
+        <line x1="80" y1="200" x2="740" y2="200" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="5 5"/>
+        
+        <!-- Spalte 2: Abruf & Antwort (unten) -->
+        <g>
+          <text x="410" y="240" font-family="Manrope, sans-serif" font-size="13" font-weight="700" fill="#FF5100" text-anchor="middle" letter-spacing="1">ABRUF &amp; ANTWORT (BEI JEDER FRAGE)</text>
+          
+          <!-- Frage -->
+          <g transform="translate(60, 270)">
+            <rect x="0" y="0" width="110" height="60" rx="8" fill="#FFFFFF" stroke="#FF5100" stroke-width="2"/>
+            <text x="55" y="28" font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="#122D6E" text-anchor="middle">Frage</text>
+            <text x="55" y="44" font-family="Manrope, sans-serif" font-size="10" fill="#122D6E" fill-opacity="0.7" text-anchor="middle">„Halle mit Kälte…"</text>
+          </g>
+          
+          <!-- Pfeil nach rechts -->
+          <g transform="translate(175, 300)">
+            <line x1="0" y1="0" x2="35" y2="0" stroke="#FFFFFF" stroke-width="2"/>
+            <polygon points="35,0 28,-4 28,4" fill="#FFFFFF"/>
+          </g>
+          
+          <!-- Vektor-Abruf -->
+          <g transform="translate(220, 270)">
+            <rect x="0" y="0" width="110" height="60" rx="8" fill="#FF5100"/>
+            <text x="55" y="28" font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Ähnlichkeits-</text>
+            <text x="55" y="44" font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">suche</text>
+          </g>
+          
+          <!-- Pfeil von VB nach oben -->
+          <g transform="translate(445, 260)">
+            <line x1="0" y1="-50" x2="0" y2="0" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4 4"/>
+          </g>
+          <text x="470" y="245" font-family="Manrope, sans-serif" font-size="10" fill="#FFFFFF" fill-opacity="0.7">relevante Stellen</text>
+          
+          <!-- Pfeil -->
+          <g transform="translate(335, 300)">
+            <line x1="0" y1="0" x2="35" y2="0" stroke="#FFFFFF" stroke-width="2"/>
+            <polygon points="35,0 28,-4 28,4" fill="#FFFFFF"/>
+          </g>
+          
+          <!-- KI-Modell -->
+          <g transform="translate(380, 270)">
+            <rect x="0" y="0" width="130" height="60" rx="8" fill="#FFFFFF"/>
+            <text x="65" y="28" font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="#122D6E" text-anchor="middle">KI-Modell</text>
+            <text x="65" y="44" font-family="Manrope, sans-serif" font-size="10" fill="#122D6E" fill-opacity="0.7" text-anchor="middle">GPT, Claude, Gemini</text>
+          </g>
+          
+          <!-- Pfeil -->
+          <g transform="translate(515, 300)">
+            <line x1="0" y1="0" x2="35" y2="0" stroke="#FFFFFF" stroke-width="2"/>
+            <polygon points="35,0 28,-4 28,4" fill="#FFFFFF"/>
+          </g>
+          
+          <!-- Antwort -->
+          <g transform="translate(560, 270)">
+            <rect x="0" y="0" width="130" height="60" rx="8" fill="#FF5100"/>
+            <text x="65" y="24" font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Antwort</text>
+            <text x="65" y="40" font-family="Manrope, sans-serif" font-size="10" fill="#FFFFFF" fill-opacity="0.9" text-anchor="middle">mit Quellenverweisen</text>
+            <text x="65" y="52" font-family="Manrope, sans-serif" font-size="10" fill="#FFFFFF" fill-opacity="0.9" text-anchor="middle">(Dokument, Seite)</text>
+          </g>
+        </g>
+        
+        <!-- Verbindung Vektordatenbank -> Ähnlichkeitssuche (senkrecht) -->
+        <g>
+          <line x1="445" y1="140" x2="445" y2="220" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 3" stroke-opacity="0.4"/>
+        </g>
+        
+        <!-- Hinweis-Text unten -->
+        <g transform="translate(410, 420)">
+          <text x="0" y="0" font-family="Manrope, sans-serif" font-size="12" fill="#FFFFFF" fill-opacity="0.8" text-anchor="middle" font-style="italic">Originaldaten bleiben, wo sie sind. Nichts wird verschoben oder kopiert.</text>
+        </g>
+      </svg>
       <div class="figure-caption">
-        Standardarchitektur für Retrieval Augmented Generation. Quelle: <a href="https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/" target="_blank" rel="noopener">NVIDIA, RAG 101</a>.
+        Standardarchitektur für Retrieval Augmented Generation. Indexierung und Abruf sind getrennte Prozesse. Schematische Darstellung nach <a href="https://www.nvidia.com/en-us/glossary/retrieval-augmented-generation/" target="_blank" rel="noopener">NVIDIA</a> und <a href="https://www.ibm.com/think/topics/retrieval-augmented-generation" target="_blank" rel="noopener">IBM</a>.
       </div>
     </div>
 
